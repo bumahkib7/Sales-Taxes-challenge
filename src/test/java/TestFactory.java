@@ -1,10 +1,10 @@
 import org.hamcrest.MatcherAssert;
-import org.junit.jupiter.api.*;
 import org.jmock.Expectations;
 import org.jmock.Mockery;
 import org.jmock.Sequence;
 import org.jmock.integration.junit4.JUnit4Mockery;
 import org.junit.Before;
+import org.junit.jupiter.api.Test;
 import org.mahkib.Sales_Taxes.models.Order;
 import org.mahkib.Sales_Taxes.models.Products;
 import org.mahkib.Sales_Taxes.models.Receipt;
