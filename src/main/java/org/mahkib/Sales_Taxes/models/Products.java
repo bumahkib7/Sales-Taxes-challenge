@@ -1,5 +1,11 @@
 package org.mahkib.Sales_Taxes.models;
 
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+import org.mahkib.Sales_Taxes.constants.ProductOrigin;
+import org.mahkib.Sales_Taxes.constants.ProductType;
+
 @ToString
 @Getter
 @Setter
@@ -7,9 +13,8 @@ package org.mahkib.Sales_Taxes.models;
 public class Products {
 
 
-
-	public static Products create(int quantity , String name, ProductType type, ProductOrigin origin, Money price) {
-		return new Products (quantity, name, type, origin, price);
+	public static Products create(int quantity, String name, ProductType type, ProductOrigin origin, Money price) {
+		return new Products(quantity, name, type, origin, price);
 	}
 
 	private final String name;
@@ -18,7 +23,7 @@ public class Products {
 	private final Money price;
 	private final int quantity;
 
-	private Products(int Quantity , String name, ProductType type, ProductOrigin origin, Money price) {
+	private Products(int Quantity, String name, ProductType type, ProductOrigin origin, Money price) {
 		this.name = name;
 		this.type = type;
 		this.origin = origin;
@@ -30,7 +35,7 @@ public class Products {
 		return name;
 	}
 
-	public ProductType getType() {
+	public Object getType() {
 		return type;
 	}
 

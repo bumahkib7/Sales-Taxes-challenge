@@ -1,6 +1,13 @@
 package org.mahkib.Sales_Taxes.models;
 
-public class Tax {
+import org.mahkib.Sales_Taxes.constants.ProductType;
+import org.mahkib.Sales_Taxes.interfaces.OrderEntry;
+import org.mahkib.Sales_Taxes.services.ProductsEntry;
+import org.mahkib.Sales_Taxes.services.TaxMethod;
+
+import java.math.BigDecimal;
+
+public class Tax implements OrderEntry {
 
 	public static Tax create(ProductsEntry taxedEntry, TaxMethod tax, Money amount) {
 		return new Tax(taxedEntry, tax, amount);
@@ -40,6 +47,6 @@ public class Tax {
 	}
 
 	public ProductType getProductType() {
-		return getProducts().getType();
+		return (ProductType) getProducts().getType();
 	}
 }

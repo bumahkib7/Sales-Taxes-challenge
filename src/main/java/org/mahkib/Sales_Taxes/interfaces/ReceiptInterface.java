@@ -2,6 +2,7 @@ package org.mahkib.Sales_Taxes.interfaces;
 
 import org.mahkib.Sales_Taxes.models.Money;
 import org.mahkib.Sales_Taxes.models.Tax;
+import org.mahkib.Sales_Taxes.services.ProductsEntry;
 
 public interface ReceiptInterface {
 	void start();

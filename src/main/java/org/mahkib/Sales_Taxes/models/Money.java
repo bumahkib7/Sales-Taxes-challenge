@@ -1,6 +1,7 @@
 package org.mahkib.Sales_Taxes.models;
 
-import lombok.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.math.BigDecimal;
 import java.math.RoundingMode;
@@ -26,13 +27,15 @@ public class Money {
 		this.amount = amount.setScale(2, RoundingMode.UP);
 	}
 
-	@Override public int hashCode() {
+	@Override
+	public int hashCode() {
 		return amount.hashCode();
 	}
 
-	@Override public boolean equals(Object other) {
+	@Override
+	public boolean equals(Object other) {
 		if (other == null) return false;
-		return other instanceof Money && equals((Money)other);
+		return other instanceof Money && equals((Money) other);
 	}
 
 	public boolean equals(Money other) {
@@ -59,7 +62,8 @@ public class Money {
 		return new Money(bigDecimal, amount.multiply(factor));
 	}
 
-	@Override public String toString() {
+	@Override
+	public String toString() {
 		return "$" + amount;
 	}
 

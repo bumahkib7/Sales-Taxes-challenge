@@ -2,11 +2,13 @@ package org.mahkib.Sales_Taxes.models;
 
 
 import lombok.ToString;
+import org.mahkib.Sales_Taxes.interfaces.ReceiptInterface;
+import org.mahkib.Sales_Taxes.services.ProductsEntry;
 
 import java.io.PrintStream;
 
 @ToString
-public class Receipt {
+public class Receipt implements ReceiptInterface {
 
 	public static Receipt create(PrintStream out) {
 		return new Receipt(out);
