@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5475a38b-ef73-4f1e-8fe4-926fc735feab" name="Changes" comment="Added Interfaces and wait to be implemented">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/services/ProductsEntry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/services/TaxExemptionEligibilityCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/services/TaxImportedEligibilityCheck.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/services/TaxMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/services/TaxMethodsPractice.java" afterDir="false" />
+    <list default="true" id="5475a38b-ef73-4f1e-8fe4-926fc735feab" name="Changes" comment="implemented all the interfaces and created services">
+      <change afterPath="$PROJECT_DIR$/src/test/java/TestFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/Presentation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/interfaces/ReceiptInterface.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/interfaces/ReceiptInterface.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/interfaces/TaxingPractice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/interfaces/TaxingPractice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/models/Money.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/models/Money.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/models/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/models/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/models/Products.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/models/Products.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/models/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/models/Receipt.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/models/Tax.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/models/Tax.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/constants/ProductType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/mahkib/Sales_Taxes/constants/ProductType.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,15 +47,19 @@
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "dart.analysis.tool.window.visible": "false",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.mahkib.Sales_Taxes.Presentation" />
@@ -97,7 +91,21 @@
       <option name="project" value="LOCAL" />
       <updated>1652859524963</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="implemented all the interfaces and created services">
+      <created>1652874788584</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1652874788585</updated>
+    </task>
+    <task id="LOCAL-00003" summary="implemented all the interfaces and created services">
+      <created>1652874936119</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1652874936119</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,6 +124,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Interfaces and wait to be implemented" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Interfaces and wait to be implemented" />
+    <MESSAGE value="implemented all the interfaces and created services" />
+    <option name="LAST_COMMIT_MESSAGE" value="implemented all the interfaces and created services" />
   </component>
 </project>
