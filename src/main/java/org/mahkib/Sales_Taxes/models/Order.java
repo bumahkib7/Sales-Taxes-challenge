@@ -4,12 +4,15 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
+import org.mahkib.Sales_Taxes.interfaces.OrderEntry;
+import org.mahkib.Sales_Taxes.interfaces.TaxingPractice;
+import org.mahkib.Sales_Taxes.services.ProductsEntry;
 
 import java.io.PrintStream;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import static org.mahkib.Sales_Taxes.models.Money.dollars;
 
 
 @Getter
@@ -18,15 +21,13 @@ import java.util.List;
 @NoArgsConstructor
 
 
-
-
 public class Order {
 
 	public static Order create(TaxingPractice taxingPractice) {
 		return new Order(taxingPractice);
 	}
 
-	private  TaxingPractice taxingPractice;
+	private TaxingPractice taxingPractice;
 	private final List<ProductsEntry> entries = new ArrayList<>();
 	private final List<Tax> taxEntries = new ArrayList<>();
 
@@ -72,7 +73,7 @@ public class Order {
 
 
 	public Receipt getReceipt() {
-		Receipt receipt = new Receipt( this.getReceiptEntries());
+		Receipt receipt = new Receipt(this.getReceiptEntries());
 		print(receipt);
 		return receipt;
 	}
